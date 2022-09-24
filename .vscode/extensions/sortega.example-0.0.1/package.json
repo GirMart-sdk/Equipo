@@ -1,0 +1,39 @@
+{
+	"name": "example",
+	"displayName": "example",
+	"description": "example",
+	"publisher": "sortega",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.42.0"
+	},
+	"categories": [
+		"Snippets",
+		"Programming Languages"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"keywords": [
+		"javascript",
+		"react",
+		"example",
+		"snippets"
+	],
+	"__metadata": {
+		"id": "87d33224-ef02-4c17-97b8-d151bc211629",
+		"publisherId": "2bd82ee7-28dd-4f08-b055-9b522031dd32",
+		"publisherDisplayName": "sortega",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1661992037655
+	}
+}

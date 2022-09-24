@@ -1,0 +1,15 @@
+{
+    "For Loop": {
+        "prefix": [
+            "for",
+            "for-const"
+        ],
+        "body": [
+            "$BLOCK_COMMENT_START this is an example for new snippet extension make by me xD $BLOCK_COMMENT_END",
+            "\tfor (const ${2:element} of ${1:array}) {",
+            "\t$0",
+            "}"
+        ],
+        "description": "A for loop."
+    }
+}
