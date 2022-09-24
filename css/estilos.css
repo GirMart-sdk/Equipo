@@ -110,13 +110,13 @@ a {
   border: 3px solid var(--rojo);
 }
 
-@media (min-width: 768px){
-  .bordes{
+@media (min-width: 768px) {
+  .bordes {
     border: 4px solid var(--blanco);
   }
 }
 
-.bordes:hover {
+.bordes::hover {
   color: var(--blanco);
   background-color: var(--rojo);
 }
