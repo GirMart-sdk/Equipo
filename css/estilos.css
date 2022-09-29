@@ -3,7 +3,7 @@
   --blanco: #fff;
   --rojo: #f5040c;
   --oscuro: #000;
-  --amarillo: #FFFF00;
+  --amarillo: #71ec29cc;
   --azul: #031AFC;
   --titulos: 'Arima Maduray', cursive;
   --parrafos: 'Mulish', sans-serif;
@@ -44,11 +44,15 @@ a {
   font-family: var(--parrafos);
 }
 
-.amarillo {
-  color: var(--rojo);
+img {
+  max-width: 100%;
 }
 
 .rojo {
+  color: var(--rojo);
+}
+
+.verde {
   color: var(--verde);
 }
 
@@ -116,9 +120,17 @@ a {
   }
 }
 
-.bordes::hover {
+.bordes:hover {
   color: var(--blanco);
   background-color: var(--rojo);
+}
+
+.btn-rojo {
+  background-color: var(--rojo);
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: inline-block;
 }
 
 /*encabezado*/
@@ -162,7 +174,7 @@ a {
 }
 
 .navegacion a:nth-child(even):hover {
-  color: var(--amarillo);
+  color: var(--verde);
 }
 
 .navegacion a:nth-child(odd):hover {
@@ -181,7 +193,7 @@ a {
   height: 100vh;
   width: 40rem;
   padding: 3rem, 4rem;
-  background-color: #000;
+  background-color: var(--oscuro);
   animation: desplazamiento .5s ease-in-out;
 }
 
@@ -234,11 +246,84 @@ a {
 
 @media(min-width: 768px) {
   .texto-encabezado h2 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 
 video {
   width: 100%;
   height: 100%;
+}
+
+/**sobre nosotros**/
+
+.contenedor-nosotros {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+@media (min-width: 768px){
+  .contenedor{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.texto-nosotros,
+.imagenes-nosotros {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.texto-nosotros .bienvenida {
+  font-size: 4rem;
+  color: var(--rojo);
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .texto-nosotros .bienvenida {
+    text-align: left;
+  }
+}
+
+.texto-nosotros h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .texto-nosotros h1 {
+    text-align: left;
+  }
+}
+
+.texto-nosotros p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .texto-nosotros p {
+    text-align: left;
+  }
+}
+
+.imagenes-nosotros {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagenes-nosotros img {
+  border-radius: 5px;
+}
+
+.imagen1,
+.imagenes2 {
+  flex: 0 0 calc(50% - 1rem);
+}
+
+.imagenes2
+img {
+  margin-bottom: 1rem;
 }
