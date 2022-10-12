@@ -1,9 +1,9 @@
 :root {
-  --verde: #00A149;
+  --verde: #197c46e0;
   --blanco: #fff;
-  --rojo: #f5040c;
+  --rojo: #97080c;
   --oscuro: #000;
-  --amarillo: #71ec29cc;
+  --binotinto: #8f0505f6;
   --azul: #031AFC;
   --titulos: 'Arima Maduray', cursive;
   --parrafos: 'Mulish', sans-serif;
@@ -122,18 +122,32 @@ img {
 
 .bordes:hover {
   color: var(--blanco);
-  background-color: var(--rojo);
+  background-color: var(--binotinto);
 }
 
 .btn-rojo {
   background-color: var(--rojo);
   font-weight: bold;
+  display: inline-block;
   margin-top: 3rem;
   margin-bottom: 2rem;
+
+}
+
+.btn-verde {
+  background-color: var(--verde);
+  border: none;
   display: inline-block;
+  margin-bottom: 2rem;
+  font-family: var(--titulos);
+}
+
+.btn-verde:hover {
+  background-color: var(--rojo);
 }
 
 /*encabezado*/
+
 .contenedor-navegacion {
   background-color: var(--oscuro);
   position: relative;
@@ -207,7 +221,6 @@ a {
   width: 4rem;
   height: .5rem;
   margin-bottom: .5rem;
-
 }
 
 /*video*/
@@ -256,6 +269,7 @@ video {
 }
 
 /**sobre nosotros**/
+
 .contenedor-nosotros {
   padding-top: 5rem;
 }
@@ -274,7 +288,7 @@ video {
 }
 
 .texto-nosotros .bienvenida {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--verde);
   text-align: center;
 }
@@ -286,7 +300,7 @@ video {
 }
 
 .texto-nosotros h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -298,7 +312,7 @@ video {
 
 .texto-nosotros p {
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 @media(min-width: 768px) {
@@ -327,4 +341,77 @@ video {
 
 .menu {
   padding-top: 4rem;
+}
+
+/*platillos*/
+
+.texto-platillos {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--oscuro);
+}
+
+.botones-platillos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.botones-platillos button {
+  flex: 0 0 calc(50% - 1rem);
+  padding: 1rem 3rem;
+}
+
+@media(min-width: 768px) {
+  .botones-platillos {
+    display: inline-block;
+  }
+
+  .botones-platillos button {
+    flex: unset;
+  }
+}
+
+@media(min-width: 768px) {
+  .platillos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+
+.platillo {
+  flex: 0 0 calc(33.3% - 1rem);
+  border: 1px solid #e1e1e1;
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.platillo h2{
+  text-align: center;
+  color: var(--oscuro);
+}
+
+.platillo p{
+  font-size: 1.8rem;
+}
+
+.precio{
+  display: flex;
+  justify-content: space-between;
+}
+.precio p{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.precio button{
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  height: 4rem;
+  font-family: var(--parrafos);
 }
